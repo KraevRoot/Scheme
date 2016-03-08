@@ -19,6 +19,6 @@
   (sqrt-iter 1.0 2.0 x))
 
 (define (check-better approximation prev-approximation x)
-  (< (abs (- approximation prev-approximation)) (* approximation 0.01)))
+  (< (abs (- approximation prev-approximation)) (* approximation 0.000001)))
 
 (display (sqrt 12345678987654321))
